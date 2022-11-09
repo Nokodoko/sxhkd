@@ -1,0 +1,221 @@
+#!/bin/bash 
+
+#TERMINAL
+super + Return
+   kitty
+
+#PROGRAM LAUNCHER
+super + <Right>
+   rofi -show 'run'
+
+super+s
+    exec kitty -e sshing.zsh
+
+super+shift+s
+    exec kitty -e capsshing.zsh
+
+#PROGRAMS
+super+r 
+   exec kitty -e refresh.sh
+
+super+z 
+   exec --no-startup-id zoom
+
+super+a 
+   exec now.zsh
+
+super+ctrl+p
+    exec mypass.zsh
+
+super+ctrl+b 
+   exec terminal -e 'bmenu'
+
+super+c
+    exec clipped.zsh
+
+super+shift+p
+   exec ~/scripts/piUpdate.zsh
+
+super+F5 
+   exec kitty -e lf
+
+super+shift+F2 
+   exec kitty -e ranger
+
+super+F3 
+   exec google-chrome
+
+super+F4 
+   exec qutebrowser
+
+super+F2 
+   exec /usr/sbin/slack
+
+super+F7 
+   exec kitty -e ~/.screenlayout/1big.sh & refresh.sh
+
+super+F9 
+   exec kitty -e ~/.screenlayout/wideOne.sh & refresh.sh
+
+super+shift+F8
+   exec kitty -e ~/.screenlayout/basic.sh & refresh.sh
+
+super+F8
+   exec kitty -e ~/.screenlayout/1Up1Down.sh
+
+super+w 
+    exec wireshark
+
+super+shift+w 
+    exec kitty -e tshark
+
+super+x 
+   exec kitty -e lynx -cfg=~/.config/lynx/lynx.cfg
+
+super+shift+x 
+   exec kitty -e amfora
+
+super+g 
+   exec kitty -e sudo goscan
+
+super+shift+F9 
+   exec urxvt -e zsh
+
+super+k 
+   exec kitty -e vpn
+
+super+shift+k 
+   exec killVpn.zsh
+
+#SPELLS
+ctrl+alt+p
+   exec ~/scripts/prodApiTokens.zsh
+
+ctrl+alt+s
+   exec ~/scripts/stagingTokenCreator.sh
+
+ctrl+alt+a
+    exec ~/scripts/awsResetPass.zsh
+
+ctrl+alt+d
+    exec ~/scripts/awsDescribeInstance.sh
+
+ctrl+alt+Down
+    exec ~/scripts/dhp.zsh
+
+ctrl+alt+m
+    exec ~/scripts/manny.sh
+
+ctrl+alt+x
+    exec ~/scripts/killer.zsh
+
+ctrl+alt+Right
+    exec ~/scripts/dcontext.zsh
+
+ctrl+alt+Left
+    exec ~/scripts/modSpell.sh
+
+ctrl+alt+f
+    exec ~/scripts/capRepoFind.sh
+
+ctrl+alt+shift+Left
+    exec ~/scripts/mkSpell.sh
+
+alt+F10
+    exec ~/scripts/dpause.sh
+
+alt+shift+ctrl+F10
+    exec ~/scripts/dresume.sh
+
+#super+Up 
+#   exec rofi -show 'ssh'
+
+super+Right 
+   exec rofi -show 'run'
+
+super+t 
+   exec pkill picom
+
+super+shift+t 
+   exec picom -b
+
+super+shift+d 
+   kitty -e ~/dtest.sh
+
+super+ctrl+x 
+   exec --no-startup-id xkill
+
+super+m 
+   exec kitty -e cmus
+
+super+shift+m 
+   exec kitty -e pavucontrol
+
+super+shift+v 
+   exec vlc
+
+super+ctrl+r 
+   exec kitty -e rebooting.sh
+
+super+ctrl+s 
+   exec shutItdown.sh
+
+super+ctrl+n 
+   exec kitty -e ~/here.sh
+
+#super+b 
+#   exec kitty -e calcurse
+
+super+v 
+   exec kitty -e screenkey
+
+super+shift+v 
+   exec kitty -e pfkill -f screenkey
+
+super+p
+   exec /usr/bin/scrot -u & exec notify-send "ScreenShot Taken"
+
+#super+i
+#   exec kitty -e nvim ~/.config/sxhkd/sxhkdrc
+
+super+shift+c
+   exec kitty -e nvim ~/Programs/dwm-6.2/config.h
+
+#super+n 
+#   exec kitty -e tty-clock -cs -C 4
+
+super+shift+B 
+   exec kitty -e nvim ~/.zshenv
+
+super+shift+g 
+   exec kitty -e ~/scripts/buds2.sh
+
+super+m 
+   exec kitty -e neomutt
+
+super+y 
+   exec dmenyt
+
+super+shift+y 
+   exec kitty -e glances
+
+super+q 
+   exec kitty -e nvim ~/.config/qutebrowser/config.py
+
+super+shift+i 
+   exec kitty -e nvim ~/.config/nvim/init.vim
+
+super+z 
+   exec zathura ~/Downloads/zshMan.pdf
+
+super+shift+7
+    exec ~/scripts/onboardKeysOn.sh #(keyboard on)
+
+super+7
+    exec ~/scripts/onboardKeysOff.sh #(keyboard off)
+
+super+shift+o
+    exec touchpad.sh
+
+super+o
+    exec touchpadOff.sh
